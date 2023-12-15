@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --dark: #350363;
+    --background-color: #ffe9db;
+}
+html{
+    font-size: 50.5%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,215,233,1) 100%);
+
+}
+
+@media(max-width:1200px){
+    body{
+        width: 190vw;
+    }
+    main{
+        width: 50vw;
+    } 
+}
+main{
+    width: 30vw;
+    height: 40vw;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: var(--background-color);
+    border: solid var(--dark);
+    border-radius: 0.8rem;
+    border-width: 0.8rem;
+    padding: 8rem 5rem;
+    color:black ;
+}
+h2{
+    font-size: 2rem;
+
+}
+p{
+    font-size: 1.8rem;
+}
+.logo{
+
+    width: 312px;
+    height: auto;
+    margin: 1rem 0 4rem 0;
+}
+.ButtonWraper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+    margin-bottom: 2rem;
+
+}
+button {
+    min-width: 16rem;
+    background: linear-gradient(92.88deg, #454eb5 9.16%, #5643cc 43.89%, #673fd7 64.72%);
+    border-radius: 8px;
+    border: none;
+    font-size: large;
+    box-sizing: border-box;
+    background-color: #350363;
+    cursor: pointer;
+    padding: 2.5rem 6rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    text-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+    transition: all 0.5s;
+    user-select: none;
+    -webkit-user-select: none;
+    text-transform: capitalize;
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff; /* Text color */
+}
+
+button:last-child{
+    background: var(--dark);
+    margin-bottom: 0;
+}
+button:hover {
+    transform: scale(1.05); /* Add a slight scale-up effect on hover */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Add a subtle shadow on hover */
+}
+
+button:focus {
+    outline: none; /* Remove the default focus outline */
+}
+
+input{
+    width: 20rem;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.info span{
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    line-height: 32px;
+    color: blue;
+}
+#welcomeScreen h2{
+    text-transform: capitalize;
+    font-size: 2rem;
+}
+button{
+    min-width: 20rem;
+}
+/* Add these styles for the input box */
+#inputBox {
+    width: 20rem;
+    padding: 1rem;
+    border: 1px solid #350363;
+    border-radius: 4px;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    background-color: #fff; /* Background color for the input box */
+    color: #350363; /* Text color for the input box */
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Add a hover effect for the input box */
+#inputBox:hover {
+    border-color: #5643cc; /* Change border color on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow on hover */
+}
+
+/* Add a focus effect for the input box */
+#inputBox:focus {
+    outline: none; /* Remove the default focus outline */
+    border-color: #673fd7; /* Change border color on focus */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a stronger shadow on focus */
+}
+
+/* Add these styles for the second section */
+#gameArea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem; /* Add some top margin */
+}
+
+#newGame button {
+    margin-top: 2rem; /* Add top margin to the "New Game" button */
+}
+
+/* Add these styles for the second section to make it eye-catching */
+#gameArea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+#newGame button {
+    margin-top: 2rem;
+    font-size: 1.8rem; /* Increase button font size */
+    padding: 1rem 2rem; /* Adjust button padding */
+    background-color: #5643cc; /* Change button background color */
+    color: #fff; /* Text color for the button */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+#newGame button:hover {
+    background-color: #673fd7; /* Change button background color on hover */
+    transform: scale(1.05); /* Add a slight scale-up effect on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+input {
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    width: 20rem;
+    text-align: center;
+    font-size: 1.6rem;
+    border: 2px solid #5643cc; /* Change input border color */
+    border-radius: 4px;
+    background-color: #fff;
+    color: #5643cc; /* Text color for the input */
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:hover {
+    border-color: #673fd7; /* Change input border color on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+input:focus {
+    outline: none;
+    border-color: #673fd7;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.stats {
+    text-align: left;
+    margin-top: 4rem;
+}
