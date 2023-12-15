@@ -13,9 +13,5 @@ A JavaScript game where players guess a randomly generated number.
 - CSS
 - JavaScript
 
-## Try it Out!
 
-Clone the repository:
-
-```bash
-git clone https://github.com/your-username/NumberQuest.git
+https://github.com/AbeehaTanveer/NumberQuest.git
